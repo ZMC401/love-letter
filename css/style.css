@@ -1,0 +1,81 @@
+/* css/style.css */
+:root {
+    --primary-color: #FF6B6B;
+    --bg-color: #1a1a2e;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui;
+    background: var(--bg-color);
+    color: #fff;
+    min-height: 100vh;
+}
+
+#starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.love-letter {
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.glassmorphism {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-action {
+    background: var(--primary-color);
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    animation: pulse 1.5s infinite;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.clickable {
+    border-bottom: 2px dashed var(--primary-color);
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 0.8; transform: scale(1); }
+}
+
+@media (orientation: landscape) {
+    body::after {
+        content: "请旋转设备至竖屏模式，获得最佳星夜体验✨";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        z-index: 999;
+    }
+}
