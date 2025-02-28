@@ -99,6 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.navigateToGitHub = () => {
-        window.location.href = 'https://github.com/yourusername/love-letter';
+        window.location.href = 'https://github.com/ZMC401/love-letter';
     };
 });
