@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>七星连珠·程序员的情书</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="starCanvas"></canvas>
+    
+    <div class="container">
+        <div class="love-letter glassmorphism">
+            <h3>致穿白袍的宇宙守护者：</h3>
+            <p>在<span class="highlight">2025.2.28</span>这个七星连珠的奇迹之夜，</p>
+            <p>你就像宇宙中最精妙的算法，</p>
+            <p>让我这个<i>i++</i>的程序员终于找到了<span class="clickable">死循环的出口</span>。</p>
+            <button class="btn-action" onclick="showSecret()">✨ 点击揭开星空的秘密</button>
+            <div id="hiddenMessage" class="hidden">
+                <p>当TCP遇见UDP，就像手术灯遇见代码：</p>
+                <p>我愿用<span class="highlight">余生做你的守护进程</span>，</p>
+                <p>在<span class="clickable" onclick="navigateToGitHub()">爱情的版本库</span>里永远保持心跳❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/bg-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
